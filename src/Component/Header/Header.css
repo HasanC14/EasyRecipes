@@ -1,6 +1,8 @@
 .link a{
     margin: 1rem;
+  
 }
 .link a:hover{
-    font-weight: bold;
+    font-weight: bold; 
+    color: #FFECEF!important; 
 }

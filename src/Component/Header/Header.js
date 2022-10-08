@@ -6,7 +6,7 @@ const Header = () => {
   return (
     <div className="mt-10 link text-center ">
       <Link to={"/home"}>HOME</Link>
-      <Link to={"/meals"}>MEALS</Link>
+      <Link to={"/meals"}>RECIPES</Link>
       <Link to={"/comments"}>COMMENTS</Link>
     </div>
   );

@@ -4,6 +4,7 @@ import Comments from "./Component/Comments/Comments";
 import Home from "./Component/Home/Home";
 import Main from "./Component/Main/Main";
 import Meals from "./Component/Meals/Meals";
+import SingleRecipe from "./Component/SingleRecipe/SingleRecipe";
 
 function App() {
   const router = createBrowserRouter([
@@ -22,6 +23,15 @@ function App() {
           element: <Meals></Meals>,
         },
         { path: "/comments", element: <Comments></Comments> },
+        {
+          path: "/meals/:idMeal",
+          loader: async ({ params }) => {
+            return fetch(
+              `https://www.themealdb.com/api/json/v1/1/lookup.php?i=${params.idMeal}`
+            );
+          },
+          element: <SingleRecipe></SingleRecipe>,
+        },
       ],
     },
   ]);
