@@ -1,6 +1,5 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./App.css";
-import Comments from "./Component/Comments/Comments";
 import Home from "./Component/Home/Home";
 import Main from "./Component/Main/Main";
 import Meals from "./Component/Meals/Meals";
@@ -22,7 +21,6 @@ function App() {
           },
           element: <Meals></Meals>,
         },
-        { path: "/comments", element: <Comments></Comments> },
         {
           path: "/meals/:idMeal",
           loader: async ({ params }) => {

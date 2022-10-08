@@ -2,7 +2,7 @@
     margin: 1rem;
   
 }
-.link a:hover{
+.active, .link a:hover{
     font-weight: bold; 
     color: #FFECEF!important; 
 }

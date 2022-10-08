@@ -13,11 +13,14 @@ const SingleRecipe = () => {
             <img
               src={details.strMealThumb}
               alt=""
-              className="rounded-lg mt-8 mb-8"
+              className="rounded-lg mt-8 mb-8 w-96 border-solid border-4 border-blue-900 "
             />
           </div>
-          <p className="text-3xl font-bold mt-10">How to make</p>
-          <p className="md:text-2xl sm:text-xl">{details.strInstructions}</p>
+          <div className=" lg:ml-40 lg:mr-40 sm:m-0">
+            <p className="text-3xl font-bold mt-10">How to make</p>
+            <p className="md:text-2xl sm:text-xl">{details.strInstructions}</p>
+          </div>
+
           <div className="flex justify-center mt-8">
             {/* <iframe
               width="560"
@@ -28,7 +31,12 @@ const SingleRecipe = () => {
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen
             ></iframe> */}
-            <a href={details.strYoutube} className="text-4xl">
+            <a
+              href={details.strYoutube}
+              className="text-4xl"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Watch On YouTube
             </a>
           </div>
